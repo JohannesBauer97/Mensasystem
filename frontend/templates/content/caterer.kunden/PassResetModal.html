@@ -1,0 +1,21 @@
+<div class="modal fade" id="passResetModal" tabindex="-1" role="dialog" aria-labelledby="passResetModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Passwort zurücksetzen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Möchten Sie für den Account <b>{..Accountname..}</b> ein neues Passwort generieren?
+                <p id="newPassP" style="display:none;">Neues Passwort: <span id="newPassS" style="color:green;"></span></p>
+                <p id="errorPass" style="display:none; color:red;">Das Passwort konnte nicht geändert werden!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                <button type="button" class="btn btn-primary" onclick="{..resetFunction..}">Ja</button>
+            </div>
+        </div>
+    </div>
+</div>

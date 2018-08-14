@@ -1,0 +1,32 @@
+<ul class="navbar-nav">
+    <li class="nav-item {..navHomeClass..}">
+        <a class="nav-link" href="index.php?page=home{..DateAttr..}">Home {..navHomeMobileMarker..}</a>
+    </li>
+    <li class="nav-item {..navKundenClass..}">
+        <a class="nav-link" href="index.php?page=kunden">Kunden {..navKundenMobileMarker..}</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle {..navUbersichtClass..}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Übersicht {..navUbersichtMobileMarker..}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.php?page=ubersicht&overview=bestellungen">Bestellungen</a>
+            <a class="dropdown-item" href="index.php?page=ubersicht&overview=umsatze">Monatsumsätze</a>
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle {..navSpeiseplanClass..}" href="#" id="navbarDropdownSpeiseplan" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Speiseplan {..navSpeiseplanMobileMarker..}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownSpeiseplan">
+            <a class="dropdown-item" href="index.php?page=speiseplan&subpage=verwalten{..DateAttr..}">Verwalten</a>
+            <a class="dropdown-item" href="index.php?page=speiseplan&subpage=artikel">Artikel</a>
+        </div>
+    </li>
+    <li class="nav-item {..navMOTDClass..}">
+        <a class="nav-link" href="index.php?page=motd">MOTD {..navMOTDMobileMarker..}</a>
+    </li>
+    <li class="nav-item {..navLogoutClass..}">
+        <a class="nav-link" href="index.php?page=logout">Logout {..navLogoutMobileMarker..}</a>
+    </li>
+</ul>

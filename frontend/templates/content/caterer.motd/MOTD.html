@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Nachricht des Tages</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Anlegen</h4>
+                <p class="card-text">Legen Sie zuerst eine Nachricht an, und aktivieren Sie diese darunter.</p>
+                <input type="text" id="msg" class="form-control">
+                <button onclick="motdAnlegen()" type="button" class="btn btn-primary" style="margin-top: 5px;">Anlegen
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top:15px">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="list-group">
+                    {..MOTDList..}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

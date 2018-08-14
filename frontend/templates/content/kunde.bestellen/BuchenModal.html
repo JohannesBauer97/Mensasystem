@@ -1,0 +1,30 @@
+<div class="modal fade" id="artikelModal" tabindex="-1" role="dialog" aria-labelledby="artikelModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="artikelModalLabel">{..Title..}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="modal-data-table">
+                    <tr>
+                        <td>Preis:</td>
+                        <td>{..Preis..}€</td>
+                    </tr>
+                    <tr>
+                        <td>Beschreibung:</td>
+                        <td>{..Beschreibung..}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" onclick="buchen({..SpeiseplanID..})">Buchen</button>-->
+                {..aktionButton..}
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+    </div>
+</div>

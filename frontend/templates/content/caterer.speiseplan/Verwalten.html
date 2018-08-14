@@ -1,0 +1,109 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Speiseplanverwaltung</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{..CurrentDate..}</h4>
+
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <th><a href="{..LinkKWZuruck..}"><i class="material-icons">keyboard_arrow_left</i></a></th>
+                        <th>Montag</th>
+                        <th>Dienstag</th>
+                        <th>Mittwoch</th>
+                        <th>Donnerstag</th>
+                        <th>Freitag</th>
+                        <th>Samstag</th>
+                        <th>Sonntag</th>
+                        <th><a href="{..LinkKWVor..}"><i class="material-icons">keyboard_arrow_right</i></a></th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <!-- <button type="button" class="btn btn-success btn-sm btn-hinzufuegen"><i
+                                        class="material-icons">add</i>
+                                </button> -->
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-montag" date="{..date-Montag..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-dienstag" date="{..date-Dienstag..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-mittwoch" date="{..date-Mittwoch..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-donnerstag" date="{..date-Donnerstag..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-freitag" date="{..date-Freitag..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-samstag" date="{..date-Samstag..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control speiseplan-artikel-select" id="slc-sonntag" date="{..date-Sonntag..}">
+                                    <option selected value="-1">Artikel auswählen</option>
+                                    {..ArtikelOptions..}
+                                </select>
+                            </td>
+                            <td>
+                                <!-- <button type="button" class="btn btn-success btn-sm btn-hinzufuegen"><i
+                                        class="material-icons">add</i>
+                                </button> -->
+                            </td>
+                        </tr>
+                        <tr id="speiseplanTableBody">
+                        {..SpeiseplanTableBody..}
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top:15px;">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Dauerhaft im Angebot</h4>
+                <div class="row">
+                    {..DauerhaftImAngebot..}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ModalPlaceholder"></div>

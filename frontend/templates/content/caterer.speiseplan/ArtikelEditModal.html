@@ -1,0 +1,45 @@
+<div class="modal fade" id="artikelEditModal" tabindex="-1" role="dialog" aria-labelledby="artikelEditModal"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Artikel ändern</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Datenbank ID:</td>
+                        <td style="padding-left: 5px;">{..ID..}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Titel:</td>
+                        <td style="padding-left: 5px;"><input type="text" class="form-control" id="modalTitel"
+                                                              value="{..Titel..}"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Beschreibung:</td>
+                        <td style="padding-left: 5px;"><input type="text" class="form-control" id="modalDescr"
+                                                              value="{..Description..}"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Preis:</td>
+                        <td style="padding-left: 5px;"><input type="text" class="form-control" id="modalPreis"
+                                                              value="{..Preis..}"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Dauerhaftes Angebot:</td>
+                        <td style="padding-left: 5px;"><input type="checkbox" id="modalDauerhaft" {..Dauerhaft..}></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                <button type="button" class="btn btn-primary" onclick="saveArtikel({..ID..})">Speichern</button>
+            </div>
+        </div>
+    </div>
+</div>

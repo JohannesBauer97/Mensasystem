@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Mein Profil</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Daten</h4>
+
+
+                <table class="simple-table">
+                    <tr>
+                        <td>Vorname:</td>
+                        <td>{..Vorname..}</td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{..Name..}</td>
+                    </tr>
+                    <tr>
+                        <td>Login:</td>
+                        <td>{..Login..}</td>
+                    </tr>
+                    <tr>
+                        <td>Kontostand:</td>
+                        <td>{..Kontostand..}</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin-top:15px;">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Buchungen</h4>
+
+                <table id="tblBuchungen" style="width:100%;">
+                    <thead>
+                    <tr>
+                        <th>Bestellnummer</th>
+                        <th>Speiseplan Datum</th>
+                        <th>Typ</th>
+                        <th>Artikel</th>
+                        <th>Preis</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {..Umsatze..}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-md-10">
+        <h2>Umsatzübersicht - {..TitleDate..}</h2>
+    </div>
+    <div class="col-md-2">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Monat wählen
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {..MonatLinks..}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Zusammenfassung</h4>
+                <table class="simple-table">
+                    <tr>
+                        <td>Einnahmen:</td>
+                        <td>{..Gewinn..}</td>
+                    </tr>
+                    <tr>
+                        <td>Summe der Buchungen:</td>
+                        <td>{..SumB..}</td>
+                    </tr>
+                    <tr>
+                        <td>Summe der Rückbuchungen:</td>
+                        <td>{..SumS..}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top:15px">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <table id="tblUmsatze" style="width:100%;">
+                    <thead>
+                    <tr>
+                        <th>Bestellnummer</th>
+                        <th>Datum</th>
+                        <th>Kunde</th>
+                        <th>Typ</th>
+                        <th>Artikel</th>
+                        <th>Preis</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {..Umsatze..}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

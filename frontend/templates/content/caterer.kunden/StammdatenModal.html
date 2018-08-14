@@ -1,0 +1,37 @@
+<div class="modal fade" id="stammdatenModal" tabindex="-1" role="dialog" aria-labelledby="stammdatenModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Stammdaten ändern</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Datenbank ID:</td>
+                        <td style="padding-left: 5px;">{..ID..}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Accountname:</td>
+                        <td style="padding-left: 5px;">{..Accountname..}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Vorname:</td>
+                        <td style="padding-left: 5px;"><input type="text" class="form-control" id="modalVorname" value="{..Vorname..}"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Nachname:</td>
+                        <td style="padding-left: 5px;"><input type="text" class="form-control" id="modalNachname" value="{..Nachname..}"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                <button type="button" class="btn btn-primary" onclick="saveStammdaten({..ID..})">Speichern</button>
+            </div>
+        </div>
+    </div>
+</div>

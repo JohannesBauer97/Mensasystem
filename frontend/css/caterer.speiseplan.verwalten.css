@@ -1,0 +1,9 @@
+.modal-data-table tr td:first-child{
+    text-align: right;
+    vertical-align: text-top;
+    font-weight: 500;
+}
+
+.modal-data-table tr td:last-child{
+    padding-left: 10px;
+}

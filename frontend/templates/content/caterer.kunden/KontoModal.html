@@ -1,0 +1,33 @@
+<div class="modal fade" id="kontoModal" tabindex="-1" role="dialog" aria-labelledby="kontoModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Kontostand {..KontoAction..}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Accountname:</td>
+                        <td style="padding-left: 5px;">{..Accountname..}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Kontostand:</td>
+                        <td style="padding-left: 5px;" id="kontostandModal">{..Kontostand..}€</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: 450;">Betrag {..KontoAction..}:</td>
+                        <td style="padding-left: 5px;"><input type="text" class="form-control" id="Betrag"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                <button type="button" class="btn btn-primary" onclick="{..actionFunction..}">{..KontoAction1..}</button>
+            </div>
+        </div>
+    </div>
+</div>
