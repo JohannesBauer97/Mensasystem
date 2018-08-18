@@ -16,9 +16,9 @@ Es basiert auf dem klassischen LAMP Stack - Linux, Apache, MySQL und PHP.
 Für die Installation ist ein Webserver mit PHP und MySQL Zugriff notwendig.
 Der Webserver Fokus (DocumentRoot bei Apache) muss auf den Ordner frontend gelegt werden.
 
-1. Importieren der Datenbank
-2. Apache2 DocumentRoot auf "frontend" legen
-3. backend/Config.php Datenbank Login Daten festlegen
+1. Importieren der Datenbank `mensasystem.sql`
+2. Apache2 DocumentRoot auf `frontend` legen
+3. `backend/Config.php` Datenbank Login Daten festlegen
 
 ## License
 
