@@ -3,6 +3,9 @@
 Das Mensasystem ist ein Schulprojekt, dass ich in einem Team während meiner Ausbildung machen musste.
 Es basiert auf dem klassischen LAMP Stack - Linux, Apache, MySQL und PHP.
 
+![FrontPage](https://github.com/Waterfront97/Mensasystem/blob/master/screenshots/2018-08-18_12h56_09.png)
+[More Screenshots](https://github.com/Waterfront97/Mensasystem/tree/master/screenshots)
+
 ## Features
 
 * Benutzer System mit Benutzergruppen (Schüler und Caterer)
